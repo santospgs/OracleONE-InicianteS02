@@ -1,0 +1,33 @@
+.btn{    
+    width: 250px;
+    height: 80px;
+    margin: 10px;
+    border-radius: 10px;  
+
+    border: 1px solid var(--primary-color);
+    font-style: normal;
+
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: var(--primary-color);
+
+    transition: 300ms;
+    cursor:pointer;
+}
+
+.btn-primary{
+    background: var(--primary-color);
+    color: var(--btn-text);
+}
+
+.btn-primary:hover{
+    background: var(--primary-color-dark);
+}
+
+@media (max-width:700px) {   
+    .btn{
+        height: 50px;
+        margin: 5px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sprint 02 - Iniciante em Programação</title>
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/buttons.css">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="http://fonts.cdnfonts.com/css/inter?styles=29142,29132,29135" rel="stylesheet">
+	<link href="http://fonts.cdnfonts.com/css/depixel?styles=131877,131881" rel="stylesheet">
+                
+</head>
+<body>
+	<div id="container">
+
+		<header class="container-header">
+			<a href="https://www.alura.com.br/"><img src="assets/logo-alura.svg" id="logo-alura"></a>
+		</header>		
+		
+		<main class="container-main">
+
+			<img src="assets/load2.gif" alt="" width="50px" id="load-gif">
+
+			<div id="start-game">
+				<button id="start-game-btn" class="btn btn-primary">Começar a jogar</button>
+				<button id="new-word-btn" class="btn">Adicionar nova palavra</button>
+			</div>
+
+			<div id="include-new-word" class="hide-container">
+				<!-- <textarea name="" id="new-word-input" placeholder="Digite uma palavra ou frase" wrap="hard"></textarea> -->
+				<input type="text" id="new-word-input" placeholder="Digite uma palavra ou frase" maxlength="10">
+				<div id="buttons">
+					<button id="include-new-word-btn" class="btn btn-primary">Salvar e começar</button>
+					<button id="new-word-cancel-btn" class="btn">Cancelar</button>
+				</div>
+				<span id="include-word-msg"></span>
+			</div>
+
+			<div id="current-game" class="hide-container">
+				<img src="assets/forca0.png" id="gallows-img">
+				<ul id="show-word"></ul>
+				<div id="buttons">
+					<button class="btn btn-primary" id="new-game-btn">Novo Jogo</button>
+					<button class="btn" id="give-up-btn">Desistir</button>
+				</div>
+				<p id="wrong-letters"></p>
+			</div>			
+		</main>		
+
+		<footer class="container-footer">
+			<span>
+				Created by <a href="https://github.com/santospgs" target="_blank">Paulo Santos <i class="fa-brands fa-github-square fa-xl"></i></a>
+			</span>
+		</footer>
+	</div>    
+</body>
+<script src="js/main.js"></script>
+<script src="js/start-game.js"></script>
+<script src="js/current-game.js"></script>
+<script src="js/insert-word.js"></script>
+<script src="js/give-up-game.js"></script>
+</html>
